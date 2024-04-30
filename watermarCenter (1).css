@@ -1,5 +1,5 @@
 div.playkit-watermark {
-    position: relative !important;
+    position: sticky !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
