@@ -7,6 +7,7 @@ div.playkit-watermark {
     }
 
 div.playkit-watermark img:first-of-type{
-    width: 50%;
+    width: 80%;
     align-items: center !important;
+    flex: auto !important;
     }
