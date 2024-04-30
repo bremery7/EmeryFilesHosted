@@ -3,6 +3,7 @@ div.playkit-watermark {
     align-items: center !important;
     justify-content: center !important;
     margin-top: 19%;
+    flex: auto !important;
     
     }
 
@@ -10,4 +11,5 @@ div.playkit-watermark img:first-of-type{
     width: 80%;
     align-items: center !important;
     flex: auto !important;
+    justify-content: center !important
     }
