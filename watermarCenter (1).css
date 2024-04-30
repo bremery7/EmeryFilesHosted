@@ -1,0 +1,28 @@
+/*div.playkit-watermark {
+position: relative !important;
+display: flex !important;
+align-items: center !important;
+justify-content: center !important;
+margin-top: 50%;
+}*/
+
+
+
+
+div.playkit-watermark {
+    position: relative !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-top: 19%;
+    
+    }
+
+div.playkit-watermark img:first-of-type{
+    height: 80%;
+    width: 80%;
+    position: relative !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    }
