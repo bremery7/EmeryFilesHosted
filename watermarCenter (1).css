@@ -2,13 +2,9 @@ div.playkit-watermark {
     position: relative !important;
     align-items: center !important;
     justify-content: center !important;
-    margin-top: 19%;
-    flex: auto !important;
-    
+        
     }
 
 div.playkit-watermark img:first-of-type{
-    width: 80%;
-   position: relative !important;
-    top: 20px; left: 20px;
+    width: 100%;
     }
