@@ -6,7 +6,7 @@
 }
 
 .playlist-wrapper__playlistContent___J5uT8::-webkit-scrollbar-thumb {
-    border-radius: 3px;
+    /*border-radius: 3px;*/
     background-color: green;
     visibility: visible !important;
 }
