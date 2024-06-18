@@ -1,16 +1,16 @@
-.playlist-wrapper__playlistWrapper___OKJ0_ {
+.playlist-wrapper__playlistWrapper___OKJ0_ .playlist-wrapper__playlistWrapper___OKJ0_ {
            
     /*width: 6px;*/
     height: 10px !important;
     visibility: visible !important;
 }
 
-.playlist-wrapper__playlistContent___J5uT8::-webkit-scrollbar-thumb {
+.playlist-wrapper__playlistWrapper___OKJ0_ .playlist-wrapper__playlistContent___J5uT8::-webkit-scrollbar-thumb {
     /*border-radius: 3px;*/
     background-color: green !important;
     visibility: visible !important;
 }
-.playlist-wrapper__playlistContent___J5uT8::-webkit-scrollbar-track {
+.playlist-wrapper__playlistWrapper___OKJ0_ .playlist-wrapper__playlistContent___J5uT8::-webkit-scrollbar-track {
     background: rgba(33, 33, 33, .9);
     visibility: visible !important;
 }
