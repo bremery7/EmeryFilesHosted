@@ -1,13 +1,14 @@
-.playlist-wrapper__playlistWrapper___OKJ0_ .playlist-wrapper__playlistWrapper___OKJ0_ {
-           
-    /*width: 6px;*/
-    height: 10px !important;
+.playlist-wrapper__playlistWrapper___OKJ0_ .playlist-wrapper__playlistContent___J5uT8::-webkit-scrollbar {
+    width: 6px;
+    height: 10px;
+    /* background-color: white; */
     visibility: visible !important;
 }
 
 .playlist-wrapper__playlistWrapper___OKJ0_ .playlist-wrapper__playlistContent___J5uT8::-webkit-scrollbar-thumb {
-    /*border-radius: 3px;*/
-    background-color: green !important;
+    border-radius: 3px;
+    background-color: blue;
+    /* font: icon; */
     visibility: visible !important;
 }
 .playlist-wrapper__playlistWrapper___OKJ0_ .playlist-wrapper__playlistContent___J5uT8::-webkit-scrollbar-track {
@@ -15,6 +16,6 @@
     visibility: visible !important;
 }
 
-.playlist-wrapper__playlistContent___J5uT8.playlist-wrapper__scrolling___J1MGg::-webkit-scrollbar-track, .playlist-wrapper__playlistContent___J5uT8.playlist-wrapper__scrolling___J1MGg::-webkit-scrollbar-thumb {
+.playlist-wrapper__playlistWrapper___OKJ0_ .playlist-wrapper__playlistContent___J5uT8.playlist-wrapper__scrolling___J1MGg::-webkit-scrollbar-track, .playlist-wrapper__playlistWrapper___OKJ0_ .playlist-wrapper__playlistContent___J5uT8.playlist-wrapper__scrolling___J1MGg::-webkit-scrollbar-thumb {
     visibility: visible !important;
 }
