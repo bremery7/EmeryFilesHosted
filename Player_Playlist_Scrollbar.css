@@ -1,19 +1,19 @@
 .playlist-wrapper__playlistWrapper___OKJ0_ {
            
-    width: 6px;
-    height: 10px;
-    visibility: visible !important;
+    /*width: 6px;*/
+    height: 10px !important;
+    /*visibility: visible !important;*/
 }
 
 .playlist-wrapper__playlistContent___J5uT8::-webkit-scrollbar-thumb {
     /*border-radius: 3px;*/
-    background-color: green;
-    visibility: visible !important;
+    background-color: green !important;
+    /*visibility: visible !important;*/
 }
-.playlist-wrapper__playlistContent___J5uT8::-webkit-scrollbar-track {
+/*.playlist-wrapper__playlistContent___J5uT8::-webkit-scrollbar-track {
     background: rgba(33, 33, 33, .9);
     visibility: visible !important;
-}
+}*/
 
 .playlist-wrapper__playlistContent___J5uT8.playlist-wrapper__scrolling___J1MGg::-webkit-scrollbar-track, .playlist-wrapper__playlistContent___J5uT8.playlist-wrapper__scrolling___J1MGg::-webkit-scrollbar-thumb {
     visibility: visible !important;
