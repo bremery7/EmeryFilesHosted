@@ -1,0 +1,21 @@
+.playlist-wrapper__playlistWrapper___OKJ0_ .playlist-wrapper__playlistContent___J5uT8::-webkit-scrollbar {
+    width: 6px;
+    height: 10px;
+    /* background-color: white; */
+    visibility: visible !important;
+}
+
+.playlist-wrapper__playlistWrapper___OKJ0_ .playlist-wrapper__playlistContent___J5uT8::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: #18f500;
+    /* font: icon; */
+    visibility: visible !important;
+}
+.playlist-wrapper__playlistWrapper___OKJ0_ .playlist-wrapper__playlistContent___J5uT8::-webkit-scrollbar-track {
+    background: rgba(33, 33, 33, .9);
+    visibility: visible !important;
+}
+
+.playlist-wrapper__playlistWrapper___OKJ0_ .playlist-wrapper__playlistContent___J5uT8.playlist-wrapper__scrolling___J1MGg::-webkit-scrollbar-track, .playlist-wrapper__playlistWrapper___OKJ0_ .playlist-wrapper__playlistContent___J5uT8.playlist-wrapper__scrolling___J1MGg::-webkit-scrollbar-thumb {
+    visibility: visible !important;
+}
