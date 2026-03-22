@@ -199,7 +199,7 @@
     // appends to the bottom naturally — eliminates the flash without
     // any perceptible lag to the user.
     function init() {
-        setTimeout(injectImmediate, 800);
+        setTimeout(injectImmediate, 8000);
     }
 
     if (document.body) {
