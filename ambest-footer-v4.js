@@ -174,6 +174,9 @@
         footerEl.innerHTML = buildFooterHTML();
         var footer = footerEl.firstElementChild;
 
+        // Hide immediately — prevent flash during reposition
+        footer.style.visibility = 'hidden';
+
         // Phase 1: append to end of body
         document.body.appendChild(footer);
 
@@ -186,20 +189,23 @@
                 if (existingFooter && existingFooter !== kmsFooter.previousElementSibling) {
                     kmsFooter.parentNode.insertBefore(existingFooter, kmsFooter);
                 }
+                // Show instantly once in correct position
+                if (existingFooter) existingFooter.style.visibility = 'visible';
             }
         });
 
         observer.observe(document.body, { childList: true, subtree: true });
 
-        // Safety net: stop observing after 5s
-        setTimeout(function () { observer.disconnect(); }, 5000);
+        // Safety net: make visible after 5s regardless
+        setTimeout(function () {
+            observer.disconnect();
+            var f = document.querySelector('.amb-footer');
+            if (f) f.style.visibility = 'visible';
+        }, 5000);
     }
 
-    // Short delay lets the page content render first so the footer
-    // appends to the bottom naturally — eliminates the flash without
-    // any perceptible lag to the user.
     function init() {
-        setTimeout(injectImmediate, 8000);
+        setTimeout(injectImmediate, 800);
     }
 
     if (document.body) {
