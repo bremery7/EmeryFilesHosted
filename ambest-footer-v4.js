@@ -167,45 +167,35 @@
         #footer_container. The instant React renders it, we silently
         move the footer to just before it. Invisible to the user.
     */
-    function injectImmediate() {
-        if (document.querySelector('.amb-footer')) return;
+    /* ── Init ────────────────────────────────────────────────────── */
+    /*
+        Don't inject until #footer_container exists in the DOM.
+        MutationObserver fires the instant React renders it — no polling,
+        no pre-injection, no flash. Footer appears once and in the
+        correct position only.
+    */
+    function init() {
+        // If #footer_container already exists, inject immediately
+        if (document.getElementById('footer_container')) {
+            injectFooter();
+            return;
+        }
 
-        var footerEl = document.createElement('div');
-        footerEl.innerHTML = buildFooterHTML();
-        var footer = footerEl.firstElementChild;
-
-        // Hide immediately — prevent flash during reposition
-        footer.style.visibility = 'hidden';
-
-        // Phase 1: append to end of body
-        document.body.appendChild(footer);
-
-        // Phase 2: watch for #footer_container and reposition
+        // Otherwise watch for it
         var observer = new MutationObserver(function () {
-            var kmsFooter = document.getElementById('footer_container');
-            if (kmsFooter) {
+            if (document.getElementById('footer_container')) {
                 observer.disconnect();
-                var existingFooter = document.querySelector('.amb-footer');
-                if (existingFooter && existingFooter !== kmsFooter.previousElementSibling) {
-                    kmsFooter.parentNode.insertBefore(existingFooter, kmsFooter);
-                }
-                // Show instantly once in correct position
-                if (existingFooter) existingFooter.style.visibility = 'visible';
+                injectFooter();
             }
         });
 
         observer.observe(document.body, { childList: true, subtree: true });
 
-        // Safety net: make visible after 5s regardless
+        // Safety net: inject at end of body after 6s if never found
         setTimeout(function () {
             observer.disconnect();
-            var f = document.querySelector('.amb-footer');
-            if (f) f.style.visibility = 'visible';
-        }, 5000);
-    }
-
-    function init() {
-        setTimeout(injectImmediate, 800);
+            injectFooter();
+        }, 6000);
     }
 
     if (document.body) {
